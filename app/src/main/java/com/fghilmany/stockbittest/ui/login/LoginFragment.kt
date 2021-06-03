@@ -45,6 +45,7 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -68,16 +69,13 @@ class LoginFragment : Fragment() {
 
             checkBiometricSupport()
             btFingerprintLoginp.setOnClickListener {
-                val biometricPrompt = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                    BiometricPrompt.Builder(requireContext())
+                val biometricPrompt = BiometricPrompt.Builder(requireContext())
                         .setTitle("Absen masuk")
                         .setDescription("silahkan scan sidik jari anda")
                         .setNegativeButton("Cancel", requireActivity().mainExecutor, { _, _ ->
                             Toast.makeText(context, "Authentification cancelled", Toast.LENGTH_SHORT).show()
                         }).build()
-                } else {
-                    TODO("VERSION.SDK_INT < P")
-                }
+
 
                 biometricPrompt.authenticate(getCancellationSignal(), requireActivity().mainExecutor, authenticationCallback)
             }
@@ -91,6 +89,7 @@ class LoginFragment : Fragment() {
 
         if (!keyGuardManager.isKeyguardLocked){
             Toast.makeText(context, "Fingerprint suthentication has not been enabled in settings", Toast.LENGTH_SHORT).show()
+            binding.btFingerprintLoginp.visibility = View.GONE
             return false
         }
 

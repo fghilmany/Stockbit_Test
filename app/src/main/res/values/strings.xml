@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Stockbit Test</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="masuk_dengan_google">Masuk dengan Google</string>
     <string name="atau">Atau</string>
     <string name="masuk_dengan_facebook">Masuk dengan Facebook</string>
@@ -18,13 +17,6 @@
     <string name="chat">Chat</string>
     <string name="portofolio">Portofolio</string>
     <string name="add_symbol">Add Symbol</string>
-    <string name="error_msg_no_biometric_hardware">No biometric hardware supported</string>
-    <string name="error_msg_biometric_hw_unavailable">Biometric Unvailable</string>
-    <string name="error_msg_biometric_not_setup">Biometric Notstup</string>
-    <string name="auth_title">Login</string>
-    <string name="auth_subtitle">Login with fingerprint</string>
-    <string name="error_msg_auth_error">Authentification Error</string>
-    <string name="error_msg_auth_failed">Authentification Fail</string>
 
     <string-array name="spinner">
         <item>All Watchlist</item>
