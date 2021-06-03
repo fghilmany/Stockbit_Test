@@ -17,4 +17,16 @@ dependencies {
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    //testing
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+    androidTestImplementation "androidx.test:rules:$androidTestVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_junit_version"
+    testImplementation "org.mockito:mockito-core:$mockitoVersion"
+    testImplementation "org.mockito:mockito-inline:$mockitoVersion"
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion"
+    testImplementation "androidx.arch.core:core-testing:$androidCoreTestVersion"
 }

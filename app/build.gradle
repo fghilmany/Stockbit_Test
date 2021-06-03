@@ -68,4 +68,6 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 
     implementation "com.airbnb.android:lottie:$lottie_version"
+
+    implementation "androidx.biometric:biometric:$biometricLibraryVersion"
 }

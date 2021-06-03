@@ -18,6 +18,13 @@
     <string name="chat">Chat</string>
     <string name="portofolio">Portofolio</string>
     <string name="add_symbol">Add Symbol</string>
+    <string name="error_msg_no_biometric_hardware">No biometric hardware supported</string>
+    <string name="error_msg_biometric_hw_unavailable">Biometric Unvailable</string>
+    <string name="error_msg_biometric_not_setup">Biometric Notstup</string>
+    <string name="auth_title">Login</string>
+    <string name="auth_subtitle">Login with fingerprint</string>
+    <string name="error_msg_auth_error">Authentification Error</string>
+    <string name="error_msg_auth_failed">Authentification Fail</string>
 
     <string-array name="spinner">
         <item>All Watchlist</item>
